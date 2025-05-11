@@ -2,17 +2,16 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>站点已迁移/title>
-    <!-- 主跳转逻辑 -->
-    <script>
-        // 强制跳转到新域名根（无视任何路径）
-        window.location.replace("https://flysein.me");
-    </script>
-    <!-- 兼容无JS环境 -->
-    <meta http-equiv="refresh" content="0; url=https://flysein.me">
+    <title>正在重定向…… - walterlv</title>
 </head>
-<body>
-    <h1>本站点已永久迁移</h1>
-    <p>正在自动跳转到新站点：<a href="https://flysein.me">flysein.me</a></p>
-</body>
+    <script language="javascript">
+        var domain = "flysein.me";
+        var current = window.location.href;
+        var target = current.substring(current.indexOf('/', current.indexOf(':') + 3));
+        window.location.href = "//" + domain + target;
+        location.href = "//" + domain + target;
+    </script>
+    <body>
+        正在重定向……
+    </body>
 </html>
