@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="utf-8">
-<title>Flysein</title>
+    <meta charset="utf-8">
+    <title>正在重定向…… - walterlv</title>
 </head>
-<script language=javascript>
-if (document.domain =='www.poetryw.cn')
-this.location = "http://www.flysein.me" + this.location.pathname + this.location.search;
-</script>
-<body>
- <h1></h1>
-</body>
+    <script language="javascript">
+        var domain = "flysein.me";
+        var current = window.location.href;
+        var target = current.substring(current.indexOf('/', current.indexOf(':') + 3));
+        window.location.href = "//" + domain + target;
+        location.href = "//" + domain + target;
+    </script>
+    <body>
+        正在重定向……
+    </body>
 </html>
