@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8">
-    <title>正在重定向…… - walterlv</title>
+  <meta charset="utf-8">
+  <title>Redirecting…</title>
+  <meta http-equiv="refresh" content="0;url=https://flysein.me">
 </head>
-    <script language="javascript">
-        var domain = "flysein.me";
-        var current = window.location.href;
-        var target = current.substring(current.indexOf('/', current.indexOf(':') + 3));
-        window.location.href = "//" + domain + target;
-        location.href = "//" + domain + target;
-    </script>
-    <body>
-        正在重定向……
-    </body>
+<body>
+  <script>
+    // Capture the full path, including query and hash
+    const path = window.location.pathname + window.location.search + window.location.hash;
+    // Redirect to the same path on the new domain
+    window.location.replace(`https://flysein.me${path}`);
+  </script>
+  <p>Redirecting to <a id="target" href="#">flysein.me</a>…</p>
+</body>
 </html>
