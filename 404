@@ -1,25 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8">
-    <title>正在重定向至新站点 - walterlv</title>
-    <script>
-        // 获取完整路径（包含查询参数和哈希）
-        const newDomain = "flysein.me";
-        const preservePath = window.location.href
-            .replace(window.location.origin, '')
-            .replace(/^\/+/, ''); // 移除开头的斜杠
-        
-        // 构建新URL（带HTTPS）
-        const newUrl = `https://${newDomain}`;
-        
-        // 立即跳转（替换历史记录避免回退问题）
-        window.location.replace(newUrl);
-    </script>
-    <!-- 备用Meta Refresh（防止JS被禁用） -->
-    <meta http-equiv="refresh" content="0; url=https://flysein.me/">
+  <meta charset="utf-8">
+  <title>Redirecting…</title>
+  <meta http-equiv="refresh" content="0;url=https://flysein.me">
 </head>
 <body>
-    <p>正在自动跳转到新站点... <a href="https://flysein.me/">手动点击</a></p>
+  <script>
+    // Capture the full path, including query and hash
+    const path = window.location.pathname + window.location.search + window.location.hash;
+    // Redirect to the same path on the new domain
+    window.location.replace(`https://flysein.me`);
+  </script>
+  <p>Redirecting to <a id="target" href="#">flysein.me</a>…</p>
 </body>
 </html>
