@@ -11,7 +11,7 @@
             .replace(/^\/+/, ''); // 移除开头的斜杠
         
         // 构建新URL（带HTTPS）
-        const newUrl = `https://${newDomain}/${preservePath}`;
+        const newUrl = `https://${newDomain}`;
         
         // 立即跳转（替换历史记录避免回退问题）
         window.location.replace(newUrl);
